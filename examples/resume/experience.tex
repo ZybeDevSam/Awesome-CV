@@ -2,6 +2,12 @@
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
 \cvsection{Work Experience}
+% \renewcommand{\cvsection}[1]{
+%   \vspace{14pt}
+%   \par\noindent
+%   \textbf{\color{awesome}#1}
+%   \vspace{6pt}
+% }
 
 
 %-------------------------------------------------------------------------------
@@ -11,113 +17,75 @@
 
 %---------------------------------------------------------
   \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
+    {Cloud Engineer} % Job title
+    {Zybellium Research Group.} % Organization
+    {Hybrid - Remote - On site} % Location
+    {Feb. 2025 - Present} % Date(s)
     {
+      % While working at Zybellium Research Group (ZRG) as a Certified Solutions Architect, I partnered with several clients to modernize and optimize their cloud infrastructure. One partnership involved an AI-powered content moderation platform that needed to undergo a major migration from GCP to AWS. I leveraged Terraform to implement Infrastructure as Code (IaC), ensuring consistency and scalability across deployments. As part of the migration, I orchestrated the transfer of MongoDB Atlas to Amazon DocumentDB using AWS DMS for reliable, low-downtime data replication. To streamline application delivery, I engineered CI/CD pipelines with GitHub Actions to automate the deployment of microservices into Amazon EKS. Additionally, I led the migration of Apache Airflow workloads from GCP to AWS by analyzing existing DAGs and designing a production-ready solution on AWS Managed Workflows for Apache Airflow (MWAA), fully provisioned and managed with Terraform. A global shipping company needed ZRG’s services to integrate an AI into their existing platform. I designed and implemented an AI orchestration platform on AWS Bedrock for this global shipping company. The solution integrated seamlessly with the client’s existing cloud infrastructure, enabling the AI to assist users with complex queries and streamline form completion. I engineered the platform to be scalable, secure, and production-ready, ensuring reliable performance while enhancing customer experience and operational efficiency.
+          While working at Zybellium Research Group (ZRG) as a Certified Solutions Architect, I partnered with several clients to modernize and optimize their cloud infrastructure. One partnership involved an AI-powered content moderation platform that needed to undergo a major migration from GCP to AWS. As part of the migration I did the following:
+      \begin{cvitems}
+          \item []
+          \item Developed and maintained Infrastructure as Code (IaC) using Terraform to automate provisioning and management of AWS resources.
+          \item Consolidated client billing and architecture by migrating data from MongoDB Atlas to AWS DocumentDB. Conducted a gap analysis, identified waves of collections to migrate in order of least to most critical, and configured AWS DMS replication instances and tasks to handle initial load and ongoing replication.
+          \item Implemented and optimized CI/CD pipelines to deploy microservices into Kubernetes clusters, ensuring automated, reliable, and scalable delivery.
+          \item Leveraged Google Cloud tools to execute data migration from GCP to AWS, ensuring secure, efficient, and reliable transfer of datasets.
+          \item Integrated Snowflake with AWS Managed Apache Airflow to build and maintain automated data pipelines, improving scalability and operational efficiency.
+      \end{cvitems}
+          A global shipping company needed ZRG's services to integrate an AI into their existing platform. I designed and implemented an AI orchestration platform on AWS Bedrock for this global shipping company. The solution integrated seamlessly with the client's existing cloud infrastructure, enabling the AI to assist users with complex queries and streamline form completion. I engineered the platform to be scalable, secure, and production-ready, ensuring reliable performance while enhancing customer experience and operational efficiency:
+      \begin{cvitems}
+          \item[]
+          \item Designed and developed an AI orchestration platform to streamline deployment, scalability, and management of machine learning workflows.
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
+    {Data Entry Specialist} % Job title
+    {Guidance Engineering} % Organization
+    {Seattle, Washington} % Location
+    {Jul. 2024 - Oct. 2024} % Date(s)
     {
+      At Guidance Engineering I helped complete a decade-long study on ski resort accident rates to inform industry standards, leveraging advanced Excel functions and meticulous data verification methods to manage large, confidential datasets with accuracy, and integrity:
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+        \item []
+        \item Finished 10 year study on accident rates at ski resorts to help set industry standards
+        \item Developed custom Excel VBA (Visual Basic for Applications) scripts and advanced formula functions to automate data categorization, reducing manual effort and improving accuracy.
+        \item Maintained confidentiality and data integrity while working with sensitive information
+        \item Conducted data verification to ensure accuracy and consistency across all records
+        \item Optimized ingestion and management of high-volume proprietary datasets, simulating ETL (Extract, Transform, Load) workflows for accurate entry, transformation, and reporting.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
+    {Full Stack Developer} % Job title
+    {University of Denver} % Organization
+    {Denver, Colorado} % Location
+    {Jun. 2022 - Jun. 2023} % Date(s)
     {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      At the University of Denver, I was chosen to lead the development of DiscoverU, a mental health support application that combined an intuitive cozy design with seamless integration of Google Cloud Platform and the Ionic Angular framework to enhance scalability and performance, while collaborating with a multidisciplinary team to drive innovation in digital mental health solutions:
+      \begin{cvitems}
+        \item []
+        \item Developed a full-stack mental health support application, DiscoverU, using the Angular/Ionic and RESTful APIs, enhancing user engagement though responsive UI/UX design.
+        \item Integrated Google Cloud Platform (GCP) services, including Firebase OAuth2.0, Firebase Buckets, Firestore, and Cloud Functions. with the Ionic framework, improving app performance, scalability, and security.
+        \item Collaborated with a multidisciplinary team using Agile methodologies, version control (GitLab) to drive innovation in digital mental health solutions.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {Certified Snowboard Instructor} % Job title
+    {Eldora Mountain Resort} % Organization
+    {Nederland, Colorado} % Location
+    {May. 2015 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
+        \item {Seasonal part time weekend work}
+        \item {Instructed individuals of all ages in snowboarding techniques at Eldora Mountain Resort.}  
+        \item {Developed personalized lesson plans to enhance learning experiences and ensure safety on the slopes.}  
+        \item {Achieved a 95\% satisfaction rate from students, fostering a love for snow sports and promoting return visits.}  
+        \item {Collaborated with a team of instructors to create a supportive and engaging learning environment.}
       \end{cvitems}
     }
 
